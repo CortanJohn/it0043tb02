@@ -1,0 +1,185 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    margin: 20px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    background-image: url(Masterball.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.detailsblue {
+    padding: 20px;
+    background-color:#6390F0;
+}
+.detailsred {
+    padding: 20px;
+    background-color:#EE8130;
+}
+.detailsbrown {
+    padding: 20px;
+    background-color: #B6A136;
+    
+}
+.detailspink {
+    padding: 20px;
+    background-color: #F95587;
+}
+.detailsviolet {
+    padding: 20px;
+    background-color: #735797;
+}
+.detailsyellow {
+    padding: 20px;
+    background-color: #F7D02C;
+}
+.name {
+    font-size: 24px;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px black
+}
+
+.type {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.desc {
+    margin-top: 10px;
+}
+
+.button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button button {
+    padding: 8px 20px;
+    margin: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button button.add {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.button button.release {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.Water {
+    background-color: #142cfc;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.Fighting {
+    background-color: #f77700;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.Fire {
+    background-color: #f70000;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.None {
+    background-color: #e2e6ff;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.Rock {
+    background-color: rgb(184, 110, 13);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.Ground {
+    background-color: rgb(221, 189, 9);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.Psychic {
+    background-color: rgb(255, 117, 186);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.Ghost {
+    background-color: rgb(132, 0, 255);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.Poison {
+    background-color: rgb(164, 67, 255);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.Electric {
+    background-color: rgb(250, 183, 0);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.Steel {
+    background-color: rgb(155, 155, 155);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+body {
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
