@@ -1,150 +1,60 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* General Styles */
+body {
     font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('background.png');
-    background-size: cover;
+/* Logo Image */
+.logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px; /* Adjust the logo size */
 }
 
-.pokemon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-    position: relative;
+/* Headings */
+h1 {
+    text-align: center;
+    color: #2c3e50;
 }
 
-.pokemon img {
-    width: 100px;
-    height: 100px;
-    transition: transform 0.3s ease;
+h2 {
+    text-align: center;
+    color: #16a085;
 }
 
-.pokemon .name {
-    display: none;
-    margin-top: 10px;
-    font-size: 1.2em;
+h3 {
+    text-align: center;
+    color: #e74c3c;
+    margin-top: 40px;
 }
 
-.pokemon .pokeball {
-    display: none;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+b {
+    font-weight: bold;
 }
 
-.pokemon:hover {
-    background-image: url('hover-bg.png');
+/* Paragraphs */
+p {
+    margin: 20px 0;
+    text-align: justify;
 }
 
-.pokemon:hover img {
-    transform: scale(1.1);
+/* Specific Class Styles */
+.June {
+    color: #d35400;
+    font-weight: bold;
 }
 
-.charmander {
-    background-color: #EE8130;
+/* Italic Text */
+i {
+    display: block;
+    text-align: center;
+    color: #95a5a6;
+    margin-top: 20px;
 }
 
-.squirtle {
-    background-color: #6390F0;
-}
-
-.bulbasaur {
-    background-color: #7AC74C;
-}
-
-.pikachu {
-    background-color: #F7D02C;
-}
-
-.mew {
-    background-color: #F95587;
-}
-
-.psyduck {
-    background-color: #6390F0;
-}
-
-.caterpie {
-    background-color: #A6B91A;
-}
-
-.venonat {
-    background-color: #A33EA1;
-}
-
-.snorlax {
-    background-color: #A8A77A;
-}
-
-.eevee {
-    background-color: #A8A77A;
-}
-
-/* Responsive grid to list */
-@media (max-width: 1024px) {
-    .pokemon {
-        width: 33.33%;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-    }
-
-    .pokemon {
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .pokemon .name {
-        display: inline;
-        margin-left: 20px;
-    }
-
-    .pokemon .pokeball {
-        display: inline;
-    }
-}
-
-/* List to card */
-@media (max-width: 480px) {
-    .container {
-        justify-content: center;
-        padding: 10px;
-    }
-
-    .pokemon {
-        width: 45%;
-        margin: 10px;
-        flex-direction: column;
-    }
-
-    .pokemon .name {
-        display: block;
-        margin-top: 10px;
-    }
-
-    .pokemon .pokeball {
-        display: none;
-    }
+i:last-of-type {
+    margin-top: 0;
 }
