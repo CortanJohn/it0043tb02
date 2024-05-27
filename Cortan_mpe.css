@@ -3,6 +3,9 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: inherit;
 }
 
 .container {
@@ -10,9 +13,10 @@ body, html {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 160vh;
     background-image: url('background.png');
     background-size: cover;
+    gap: 5px; 
 }
 
 .pokemon {
@@ -20,27 +24,29 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: calc(25% - 20px); /
     padding: 20px;
     box-sizing: border-box;
     transition: all 0.3s ease;
     position: relative;
-}
+    margin: 20px; 
 
 .pokemon img {
     width: 100px;
     height: 100px;
     transition: transform 0.3s ease;
+    justify-content: left;
 }
 
 .pokemon .name {
     display: none;
     margin-top: 10px;
     font-size: 1.2em;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .pokemon .pokeball {
-    display: none;
+    display: contents;
     width: 30px;
     height: 30px;
     position: absolute;
@@ -49,7 +55,7 @@ body, html {
 }
 
 .pokemon:hover {
-    background-image: url('hover-bg.png');
+    background-image: url('hoverz.jpeg');
 }
 
 .pokemon:hover img {
@@ -58,52 +64,72 @@ body, html {
 
 .charmander {
     background-color: #EE8130;
+    border-radius: 10px;
 }
 
 .squirtle {
     background-color: #6390F0;
+    border-radius: 10px;
 }
 
 .bulbasaur {
     background-color: #7AC74C;
+    border-radius: 10px;
 }
 
 .pikachu {
     background-color: #F7D02C;
+    border-radius: 10px;
 }
 
 .mew {
     background-color: #F95587;
+    border-radius: 10px;
 }
 
 .psyduck {
     background-color: #6390F0;
+    border-radius: 10px;
 }
 
 .caterpie {
     background-color: #A6B91A;
+    border-radius: 10px;
 }
 
 .venonat {
     background-color: #A33EA1;
+    border-radius: 10px;
 }
 
 .snorlax {
     background-color: #A8A77A;
+    border-radius: 10px;
 }
 
 .eevee {
     background-color: #A8A77A;
+    border-radius: 10px;
+}
+
+.meowth {
+    background-color: #A8A77A;
+    border-radius: 10px;
+}
+
+.jigglypuff {
+    background-color: #D685AD;
+    border-radius: 10px;
 }
 
 /* Responsive grid to list */
-@media (max-width: 1024px) {
+@media (max-width: 930px) {
     .pokemon {
-        width: 33.33%;
+        width: 33.33%; 
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 930px) {
     .container {
         flex-direction: column;
         align-items: flex-start;
@@ -126,7 +152,6 @@ body, html {
     }
 }
 
-/* List to card */
 @media (max-width: 480px) {
     .container {
         justify-content: center;
@@ -148,3 +173,4 @@ body, html {
         display: none;
     }
 }
+
