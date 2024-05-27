@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +11,7 @@ html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('path/to/background.jpg');
+    background-image: url('background.png');
     background-size: cover;
 }
 
@@ -50,11 +49,51 @@ html {
 }
 
 .pokemon:hover {
-    background-image: url('path/to/hover-bg.png');
+    background-image: url('hover-bg.png');
 }
 
 .pokemon:hover img {
     transform: scale(1.1);
+}
+
+.charmander {
+    background-color: #EE8130;
+}
+
+.squirtle {
+    background-color: #6390F0;
+}
+
+.bulbasaur {
+    background-color: #7AC74C;
+}
+
+.pikachu {
+    background-color: #F7D02C;
+}
+
+.mew {
+    background-color: #F95587;
+}
+
+.psyduck {
+    background-color: #6390F0;
+}
+
+.caterpie {
+    background-color: #A6B91A;
+}
+
+.venonat {
+    background-color: #A33EA1;
+}
+
+.snorlax {
+    background-color: #A8A77A;
+}
+
+.eevee {
+    background-color: #A8A77A;
 }
 
 /* Responsive grid to list */
