@@ -1,3 +1,4 @@
+/* General styles */
 body, html {
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ body, html {
     height: 160vh;
     background-image: url('background.png');
     background-size: cover;
-    gap: 5px; 
+    gap: 5px; /* Add gap between grid items */
 }
 
 .pokemon {
@@ -24,12 +25,13 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: calc(25% - 20px); /
+    width: calc(25% - 20px); /* Adjust width to account for gap */
     padding: 20px;
     box-sizing: border-box;
     transition: all 0.3s ease;
     position: relative;
-    margin: 20px; 
+    margin: 20px; /* Add margin to create space between items */
+}
 
 .pokemon img {
     width: 100px;
@@ -173,4 +175,3 @@ body, html {
         display: none;
     }
 }
-
