@@ -52,3 +52,9 @@ i {
 i:last-of-type {
     margin-top: 0;
 }
+
+body {
+    background-image: url("Feubackground.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
