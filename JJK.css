@@ -1,88 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CORTAN_TSA6</title>
-    <link rel="stylesheet" href="JJK.css">
-</head>
+.jjk-container{
+width:90vw;
+border: 5px solid black;
+margin: 50 px auto;
+display: grid;
+}
 
-<body>
-    <div class="jjk-container">
-        <div class="item" id="Gojo">
-            <div class="details">
-                <img src="Gojo.webp" alt="Gojo">
-                <div class="name-grade">
-                    <p class="name"> Saturo Gojo</p>
-                    <p class="grade">Special Grade</p>
-        </div>
-    </div>  
-            <p class="desc">Satoru Gojo (五ご条じょう悟さとる Gojō Satoru?) is one of the main protagonists of the Jujutsu Kaisen
-                series. He is a special grade jujutsu sorcerer and widely recognized as the strongest in the world.
-                Satoru is the pride of the Gojo Clan, the first person to inherit both the Limitless and the Six Eyes in
-                four hundred years. He works as a teacher at the Tokyo Jujutsu High and uses his influence to protect
-                and train strong young allies.</p>
-            </div>
+.item{
+    border: 2px solid white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white
+}
 
-            <div class="item" id="Sukuna">
-                <div class="details">
-                    <img src="Sukuna.webp" alt="Sukuna">
-                    <div class="name-grade">
-                        <p class="name"> Ryomen Sukuna </p>
-                        <p class="grade">Special Grade</p>
-                    </div>
-                </div>
-                <p class="desc">Ryomen Sukuna (両りょう面めん宿すく儺な Ryōmen Sukuna?), more often referred to as simply Sukuna
-                    (宿すく儺な Sukuna?), is the strongest jujutsu sorcerer from over a thousand years ago. Regarded as the
-                    undisputed King of Curses (呪のろいの王おう Noroi no Ō?), Sukuna is one of the primary antagonists of the
-                    Jujutsu Kaisen series.</p>
-            </div>
+img{
+    width: 128px;
+}
 
-            <div class="item" id="Nanami">
-                <div class="details">
-                    <img src="Nanami.webp" alt="Nanami">
-                    <div class="name-grade">
-                        <p class="name"> Kento Nanami </p>
-                        <p class="grade">Grade 1</p>
-                    </div>
-                </div>
-                <p class="desc">Kento Nanami (七なな海み建けん人と Nanami Kento?) is a major supporting character in Jujutsu
-                    Kaisen. He was a former student of Tokyo Jujutsu High where he was an underclassman of Satoru Gojo
-                    and Suguru Geto. Nanami initially left Jujutsu High after graduating to become a salaryman, but
-                    returned four years later to continue working as a jujutsu sorcerer.</p>
-            </div>
+.name{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
 
-            <div class="item" id="Kokichi">
-                <div class="details">
-                    <img src="Kokichi.webp" alt="Kokichi">
-                    <div class="name-grade">
-                        <p class="name"> Kokichi Muta </p>
-                        <p class="grade">Semi-Grade 1</p>
-                    </div>
-                </div>
-                <p class="desc">Kokichi Muta (与むた 幸こう吉きち Muta Kōkichi?) is a supporting character in the Jujutsu Kaisen
-                    series. He was a second-year at Kyoto Jujutsu High using Ultimate Mechamaru as his proxy to attend
-                    school. Kokichi himself could not due to the sickly and fragile body he was born with as a result of
-                    his Heavenly Restriction.</p>
-            </div>
+.grade{
+    font-size: 1.6rem;
+}
 
-            <div class="item" id="Megumi">
-                <div class="details">
-                    <img src="Megumi.webp" alt="Megumi">
-                    <div class="Grade 2">
-                        <p class="name"> Megumi Fushiguro </p>
-                        <p class="grade">Special Grade</p>
-                    </div>
-                </div>
-                <p class="desc">Megumi Fushiguro (伏ふし黒ぐろ恵めぐみ Fushiguro Megumi?) is the deuteragonist of the Jujutsu
-                    Kaisen series. He is a grade 2 jujutsu sorcerer and first-year student at Tokyo Jujutsu High
-                    alongside Yuji Itadori and Nobara Kugisaki. Megumi is the step-brother of Tsumiki Fushiguro and as
-                    the son of Toji Fushiguro, Megumi is also a descendant of the Zenin Clan. Megumi was born outside
-                    the clan as Toji's trump card and was eventually found by Satoru Gojo, who mentored him and enrolled
-                    him at Jujutsu High as his student.</p>
-            
-                </div>
-</body>
+.desc{
+    text-align: justify;
+    line-height:1.5;
+}
 
-</html>
+#Gojo{
+    background-color: #003D69;
+    grid-column: 1/3;
+}
+
+#Sukuna{
+    background-color: #281C60;
+}
+
+#Nanami{
+    background-color: #296974;
+    grid-column: 1/2;
+}
+
+#Kokichi{
+    background-color: #AD418C;
+    grid-column: 2/4;
+}
+
+#Megumi{
+    background-color: #3A214A;
+    grid-column: 4/5;
+    grid-row: 1/3;
+
+}
+
+@media (max-width:800px){
+ .jjk-container{
+   grid-template-columns: 1fr;  
+ }
+
+ #Gojo{
+    grid-column: 1/2;
+ }
+
+ #Kokichi{
+    grid-column: 1/2;
+ }
+
+}
